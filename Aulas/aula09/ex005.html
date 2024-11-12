@@ -15,10 +15,32 @@
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong>em JavaScript</p>
-    <div>Clique aqui</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique aqui</div>
     <script>
-        
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName('p')[1]
+
+        var d = document.querySelector('div#msg')
+        d.style.color = 'blue'
+
+
+        /*
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Ola'
+        */
+
+        /*
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = "Aguardando..."
+        document.write(p1.innerHTML)
+
+
+        corpo.style.background  = "black"
+        p1.style.color = 'blue'
+        window.document.write('Esta escrito: ' + p1.innerText)
+        */
     </script>
 </body>
 </html>
